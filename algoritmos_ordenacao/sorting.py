@@ -19,17 +19,17 @@
 # lista01 = [7,5,1,8,3,6,2]
 
 
-def selecao_ordenacao(lista01):                         # 2. Cria-se uma função para realizar o selection sort = seleção por ordenação
-    n = len(lista01)                                    # 1. Cria-se uma variavel com metodo len(para valer o tamanho da lista)
-    for j in range(n-1):                                # 3. Cria-se uma variavel J para alocar o valor mínimo
-        index_minimo = j                                # 1. Cria-se uma variavel com o primeiro valor da lista para inicio do if
-        for i in range(j,n):                            # 1 .Andar pela lista com o index i com o tamanho dela n
-            if lista01[i] < lista01[index_minimo]:      # 1. SE index for menor que o valor posicionado [x] no caso começa com o 1 item da lista
-                index_minimo = i                        # 1 .Se verdadeiro, o valor minimo assume o valor em que o index está na lista no momento
-        if lista01[j] < lista01[index_minimo]:          # 3. Cria-se uma verificação para a troca, quem está na posição J pelo valor_minimo
-            var_auxiliar = lista01[j]                   # 3. Cria-se uma variavel auxiliar para pegar o valor contido em uma das extremidades
-            lista01[j] = lista01[index_minimo]          # 3. Coloca na posição J o valor que estava no index_minimo
-            lista01[index_minimo] = var_auxiliar        # 3. Coloca no index_minimo o valor contido na var_auxiliar que foi usada so para não perder esse valor inicial
+def selecao_ordenacao(lista):                       # 2. Cria-se uma função para realizar o selection sort = seleção por ordenação
+    n = len(lista)                                  # 1. Cria-se uma variavel com metodo len(para valer o tamanho da lista)
+    for j in range(n-1):                            # 3. Cria-se uma variavel J para alocar o valor mínimo
+        index_minimo = j                            # 1. Cria-se uma variavel com o primeiro valor da lista para inicio do if
+        for i in range(j, n):                       # 1 .Andar pela lista com o index i com o tamanho dela n
+            if lista[i] < lista[index_minimo]:      # 1. SE index for menor que o valor posicionado [x] no caso começa com o 1 item da lista
+                index_minimo = i                    # 1 .Se verdadeiro, o valor minimo assume o valor em que o index está na lista no momento
+        if lista[j] > lista[index_minimo]:          # 3. Cria-se uma verificação para a troca, quem está na posição J pelo valor_minimo
+            var_auxiliar = lista[j]                 # 3. Cria-se uma variavel auxiliar para pegar o valor contido em uma das extremidades
+            lista[j] = lista[index_minimo]          # 3. Coloca na posição J o valor que estava no index_minimo
+            lista[index_minimo] = var_auxiliar      # 3. Coloca no index_minimo o valor contido na var_auxiliar que foi usada so para não perder esse valor inicial
 
 # print(valor_minimo)                                   # 1 .No final disso tudo, o valor minimo tem que ser o menor elemento encontrado na lista
 

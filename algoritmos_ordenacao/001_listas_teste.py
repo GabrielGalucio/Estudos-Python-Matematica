@@ -7,7 +7,7 @@ inversed = [117, 90, 88, 83, 81, 77, 74, 69, 64, 63, 51, 50, 49, 42, 41, 34, 29,
 repeated = [7, 7, 7, 7, 7, 7, 7, 1, 1, 9, 9, 0, 4, 4, 4, 4, 5, 4, 5, 7, 1]
 
 if __name__ == "__main__":
-    lista01 = any_numbers
-    print(lista01)
-    selecao_ordenacao(lista01)
-    print("\n Ordenado:")
+    lista = repeated
+    print(lista)
+    selecao_ordenacao(lista)
+    print("\n Ordenado:", lista)
